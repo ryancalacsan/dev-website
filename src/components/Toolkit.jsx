@@ -9,8 +9,8 @@ import { IconContext } from "react-icons"
 
 export default function Toolkit() {
   return (
-    <section className="toolkit-section">
-      <h2 className="wrapper">My Toolkit 💻</h2>
+    <section className="toolkit-section wrapper">
+      <h2>My Toolkit 💻</h2>
       <IconContext.Provider value={{ size: "2.0em", color: "#ff8811" }}>
         <ul className="skills wrapper">
           <li>
