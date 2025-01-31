@@ -12,7 +12,7 @@ const Projects = forwardRef((props, ref) => {
   return (
     <section className="projects-section wrapper" id="projects" ref={ref}>
       <h2>My Projects 👾</h2>
-      <p className="learnMoreText ">click any project to learn more!</p>
+      <p className="learnMoreText responsive-text"></p>
       <div className="portfolio-container">
         {projectsData.map((project) => (
           <div key={project.id} className="portfolio-item">

@@ -14,7 +14,7 @@ export default function Header({ scrollToSection }) {
           </p>
         </div>
         <img
-          src="src/assets/profile.jpg"
+          src="/profile.jpg"
           alt="Ryan Calacsan smiling"
           className="header-img"
         />
