@@ -68,36 +68,3 @@ const Projects = forwardRef((props, ref) => {
 })
 
 export default Projects
-
-// <div className="firstRow ">
-//         <div className="portfolio-item">
-//           <img
-//             className="portfolio-thumbnail"
-//             src="src/assets/placeholder.jpg"
-//             alt=""
-//           />
-//         </div>
-//         <div className="portfolio-item">
-//           <img
-//             className="portfolio-thumbnail"
-//             src="src/assets/placeholder.jpg"
-//             alt=""
-//           />
-//         </div>
-//         <div className="SecondRow">
-//           <div className="portfolio-item">
-//             <img
-//               className="portfolio-thumbnail"
-//               src="src/assets/placeholder.jpg"
-//               alt=""
-//             />
-//           </div>
-//           <div className="portfolio-item">
-//             <img
-//               className="portfolio-thumbnail"
-//               src="src/assets/placeholder.jpg"
-//               alt=""
-//             />
-//           </div>
-//         </div>
-//       </div>
