@@ -1,0 +1,33 @@
+.toolkit-section {
+  padding-block: 1em;
+}
+
+.toolkit__title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.toolkit__skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 2rem 1rem;
+  row-gap: 2rem;
+}
+
+.toolkit__skill {
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+  width: 5em;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .toolkit__skill {
+    font-size: 1.3rem;
+  }
+}

@@ -1,8 +1,12 @@
 export default function Footer() {
   return (
-    <footer>
-      <p>
-        Built from <a>scratch</a> with 🤍 © 2025 Ryan Calacsan
+    <footer className="footer">
+      <p className="footer__text">
+        Built from{" "}
+        <a href="#" className="footer__link">
+          scratch
+        </a>{" "}
+        with 🤍 © 2025 Ryan Calacsan
       </p>
     </footer>
   )

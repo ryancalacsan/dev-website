@@ -26,7 +26,7 @@ const projectsData = [
     description:
       "A simple movie watchlist app that lets users search for movies via the OMDB API and save them to a watchlist.",
     githubLink: "https://github.com/ryancalacsan/movie-watchlist-v2",
-    livePreviewLink: "https://project-four.example.com",
+    livePreviewLink: "http://cinelist-dev.netlify.app/",
     tags: ["HTML", "CSS", "TS", "OMDB API"],
   },
   {

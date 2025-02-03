@@ -1,0 +1,16 @@
+// base
+@import "./base/reset";
+@import "./base/base";
+
+// components
+@import "./components/menu";
+@import "./components/header";
+@import "./components/projects";
+@import "./components/aboutme";
+@import "./components/toolkit";
+@import "./components/contact";
+@import "./components/footer";
+
+// utils
+@import "./utils/variables";
+@import "./utils/utils";

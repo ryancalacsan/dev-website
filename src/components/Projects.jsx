@@ -1,6 +1,5 @@
 import { forwardRef, useState } from "react"
 import projectsData from "../projectData"
-import "./projects.css" // CSS for the hover effect and click behavior
 
 const Projects = forwardRef((props, ref) => {
   const [activeProjectId, setActiveProjectId] = useState(null)
@@ -10,42 +9,47 @@ const Projects = forwardRef((props, ref) => {
   }
 
   return (
-    <section className="projects-section wrapper" id="projects" ref={ref}>
-      <h2>My Projects 👾</h2>
-      <p className="learnMoreText responsive-text"></p>
-      <div className="portfolio-container">
+    <section className="projects wrapper" id="projects" ref={ref}>
+      <h2 className="projects__title">My Projects 👾</h2>
+      <p className="projects__text"></p>
+      <div className="projects__container">
         {projectsData.map((project) => (
-          <div key={project.id} className="portfolio-item">
+          <div key={project.id} className="projects__item">
             <div
-              className="thumbnail-container"
+              className="projects__thumbnail-container"
               onClick={() => handleClick(project.id)} // Only for small screens
             >
               <img
                 src={project.image}
                 alt={project.title}
-                className="thumbnail"
+                className="projects__thumbnail"
               />
               {/* Overlay content */}
               <div
-                className={`overlay ${
-                  activeProjectId === project.id ? "active" : ""
+                className={`projects__overlay ${
+                  activeProjectId === project.id
+                    ? "projects__overlay--active"
+                    : ""
                 }`}
               >
-                <div className="overlay-content">
-                  <h3>{project.title}</h3>
-                  <p>{project.description}</p>
-                  <div className="tags">
+                <div className="projects__overlay-content">
+                  <h3 className="projects__overlay-title">{project.title}</h3>
+                  <p className="projects__overlay-description">
+                    {project.description}
+                  </p>
+                  <div className="projects__tags">
                     {project.tags.map((tag, index) => (
-                      <span key={index} className="tag">
+                      <span key={index} className="projects__tag">
                         {tag}
                       </span>
                     ))}
                   </div>
-                  <div className="links">
+                  <div className="projects__links">
                     <a
                       href={project.livePreviewLink}
                       target="_blank"
                       rel="noopener noreferrer"
+                      className="projects__link"
                     >
                       View Live
                     </a>
@@ -53,6 +57,7 @@ const Projects = forwardRef((props, ref) => {
                       href={project.githubLink}
                       target="_blank"
                       rel="noopener noreferrer"
+                      className="projects__link"
                     >
                       GitHub
                     </a>

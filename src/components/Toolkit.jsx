@@ -1,4 +1,4 @@
-import { FaReact, FaCss3Alt, FaHtml5 } from "react-icons/fa"
+import { FaReact, FaCss3Alt, FaHtml5, FaSass } from "react-icons/fa"
 import {
   SiAdobecreativecloud,
   SiReactrouter,
@@ -13,51 +13,55 @@ import { IconContext } from "react-icons"
 
 export default function Toolkit() {
   return (
-    <section className="toolkit-section wrapper">
-      <h2>My Toolkit 💻</h2>
+    <section className="toolkit toolkit-section wrapper">
+      <h2 className="toolkit__title">My Toolkit 💻</h2>
       <IconContext.Provider value={{ size: "2.0em", color: "#ff8811" }}>
-        <ul className="skills wrapper">
-          <li>
-            <FaHtml5 />
-            HTML5
-          </li>
-          <li>
-            <FaCss3Alt />
-            CSS3
-          </li>
-          <li>
-            <SiTailwindcss />
-            Tailwind CSS
-          </li>
-          <li>
-            <SiJavascript />
-            JavaScript
-          </li>
-          <li>
-            <SiTypescript />
-            Typescript
-          </li>
-          <li>
-            <FaReact size={30} />
-            React
-          </li>
-          <li>
-            <SiReactrouter />
-            React Router
-          </li>
-          <li>
-            <SiAdobecreativecloud />
-            Adobe Createive Cloud
-          </li>
-          <li>
+        <ul className="toolkit__skills">
+          <li className="toolkit__skill">
             <RxAccessibility />
             Accessibility
           </li>
-          <li>
+          <li className="toolkit__skill">
+            <FaHtml5 />
+            HTML5
+          </li>
+          <li className="toolkit__skill">
+            <FaCss3Alt />
+            CSS3
+          </li>
+          <li className="toolkit__skill">
+            <SiTailwindcss />
+            Tailwind CSS
+          </li>
+          <li className="toolkit__skill">
+            <FaSass />
+            Sass
+          </li>
+          <li className="toolkit__skill">
+            <SiJavascript />
+            JavaScript
+          </li>
+          <li className="toolkit__skill">
+            <SiTypescript />
+            Typescript
+          </li>
+          <li className="toolkit__skill">
+            <FaReact size={30} />
+            React
+          </li>
+          <li className="toolkit__skill">
+            <SiReactrouter />
+            React Router
+          </li>
+          <li className="toolkit__skill">
             <SiFirebase />
             Firebase
           </li>
-          <li>
+          <li className="toolkit__skill">
+            <SiAdobecreativecloud />
+            Adobe Creative Cloud
+          </li>
+          <li className="toolkit__skill">
             <SiDaisyui />
             DaisyUI
           </li>

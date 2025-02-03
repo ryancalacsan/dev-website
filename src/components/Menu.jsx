@@ -8,26 +8,26 @@ export default function Menu() {
   }
 
   return (
-    <nav role="navigation">
+    <nav role="navigation" className="menu">
       <div
         onClick={toggleMenu}
-        className={`menu-toggle ${isOpen && "menu-open"}`}
+        className={`menu__toggle ${isOpen ? "menu__toggle--open" : ""}`}
       >
-        <span>Menu</span>
+        <span className="menu__toggle-icon">Menu</span>
       </div>
-      <ul className={`menu ${isOpen && "active"}`}>
-        <li>
-          <a onClick={toggleMenu} href="#projects" className="link">
+      <ul className={`menu__list ${isOpen ? "menu__list--active" : ""}`}>
+        <li className="menu__item">
+          <a onClick={toggleMenu} href="#projects" className="menu__link">
             <span>Projects</span>
           </a>
         </li>
-        <li>
-          <a onClick={toggleMenu} href="#about-me" className="link">
+        <li className="menu__item">
+          <a onClick={toggleMenu} href="#about-me" className="menu__link">
             <span>About Me</span>
           </a>
         </li>
-        <li>
-          <a onClick={toggleMenu} href="#contact" className="link">
+        <li className="menu__item">
+          <a onClick={toggleMenu} href="#contact" className="menu__link">
             <span>Contact</span>
           </a>
         </li>
