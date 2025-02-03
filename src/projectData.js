@@ -2,7 +2,7 @@ const projectsData = [
   {
     id: 1,
     title: "GoVan",
-    image: "src/assets/placeholder.jpg",
+    image: "GoVan-mockup.gif",
     description:
       "GoVan is a mock van rental & hosting app where users can explore, filter, and view detailed listings of adventure vans.",
     livePreviewLink: "https://govan-dev.netlify.app/",
@@ -11,7 +11,7 @@ const projectsData = [
   {
     id: 2,
     title: "AI Chef",
-    image: "src/assets/placeholder.jpg",
+    image: "AIChef-mockup.gif",
     description:
       "AI Chef is a web application that allows users to generate AI-crafted recipes by inputting ingredients.",
     githubLink: "https://github.com/user/project-three",
@@ -21,7 +21,7 @@ const projectsData = [
   {
     id: 3,
     title: "CineList",
-    image: "src/assets/placeholder.jpg",
+    image: "CineList-mockup.gif",
     description:
       "A simple movie watchlist app that lets users search for movies via the OMDB API and save them to a watchlist.",
     githubLink: "https://github.com/user/project-four",
@@ -31,7 +31,7 @@ const projectsData = [
   {
     id: 4,
     title: "Color Scheme Generator",
-    image: "src/assets/placeholder.jpg",
+    image: "ColorGen-mockup.gif",
     description:
       "A web application that creates custom color schemes by selecting a base color and method, or generates a random palette.",
     githubLink: "https://github.com/ryancalacsan/color-scheme-generator",
