@@ -5,6 +5,7 @@ const projectsData = [
     image: "GoVan-mockup.gif",
     description:
       "GoVan is a mock van rental & hosting app where users can explore, filter, and view detailed listings of adventure vans.",
+    githubLink: "https://github.com/ryancalacsan/govan",
     livePreviewLink: "https://govan-dev.netlify.app/",
     tags: ["React", "TailwindCSS", "TS", "Firebase"],
   },
@@ -14,7 +15,7 @@ const projectsData = [
     image: "AIChef-mockup.gif",
     description:
       "AI Chef is a web application that allows users to generate AI-crafted recipes by inputting ingredients.",
-    githubLink: "https://github.com/user/project-three",
+    githubLink: "https://github.com/ryancalacsan/ai-chef",
     livePreviewLink: "https://ai-chef-dev.netlify.app/",
     tags: ["HTML", "CSS", "TS", "Mistral AI"],
   },
@@ -24,7 +25,7 @@ const projectsData = [
     image: "CineList-mockup.gif",
     description:
       "A simple movie watchlist app that lets users search for movies via the OMDB API and save them to a watchlist.",
-    githubLink: "https://github.com/user/project-four",
+    githubLink: "https://github.com/ryancalacsan/movie-watchlist-v2",
     livePreviewLink: "https://project-four.example.com",
     tags: ["HTML", "CSS", "TS", "OMDB API"],
   },
