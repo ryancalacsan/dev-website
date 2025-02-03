@@ -7,6 +7,10 @@ body {
 
 /* global text styling */
 
+a {
+  color: inherit;
+}
+
 h2 {
   color: $dark-color;
   position: relative;

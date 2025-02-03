@@ -75,6 +75,10 @@ body {
 }
 
 /* global text styling */
+a {
+  color: inherit;
+}
+
 h2 {
   color: #392f5a;
   position: relative;
@@ -198,15 +202,14 @@ h2::after {
   color: #ff8811;
 }
 
-header {
+.hero {
   display: flex;
   flex-direction: column;
   align-items: center;
   height: 100vh;
   justify-content: center;
 }
-
-.header-main-container {
+.hero__main-container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -214,48 +217,20 @@ header {
   margin-top: auto;
   gap: 2em;
 }
-
-.header-info {
+.hero__info {
   margin-top: auto;
 }
-
-header h1 {
-  font-size: 1.875rem;
-  color: #6bd6c9;
-  margin-top: auto;
-  flex: 1;
-  line-height: 1.3;
-  padding-bottom: 0.8em;
+.hero__name {
   font-weight: 700;
 }
-
-header h1 span {
-  display: block;
-  position: relative;
-}
-
-header h1 span::after {
-  content: "";
-  position: absolute;
-  background-color: rgba(244, 209, 111, 0.4941176471);
-  box-shadow: 0 0 8px rgba(244, 209, 111, 0.4941176471);
-  height: 18px;
-  left: 5px;
-  bottom: 0;
-  width: 180px;
-  z-index: -1;
-}
-
-header p {
+.hero__description {
   font-size: 1.25rem;
-  padding-bottom: 1rem;
+  padding-bottom: 1em;
 }
-
-header span {
+.hero__highlight {
   color: #6bd6c9;
 }
-
-.header-img {
+.hero__img {
   border-radius: 50%;
   height: 230px;
   width: 230px;
@@ -266,17 +241,55 @@ header span {
      object-position: 50% 40%;
   overflow: hidden;
 }
-
-.tagline {
+.hero__tagline {
   margin-top: auto;
   font-size: 1rem;
   text-align: center;
 }
-
-.down-arrow {
+.hero__down-arrow {
   padding: 1rem;
 }
+.hero h1 {
+  font-size: 2rem;
+  color: #6bd6c9;
+  margin-top: auto;
+  flex: 1;
+  line-height: 1.3;
+  padding-bottom: 0.8em;
+  font-weight: 700;
+}
+.hero h1 span {
+  display: block;
+  position: relative;
+}
+.hero h1 span::after {
+  content: "";
+  position: absolute;
+  background-color: rgba(244, 209, 111, 0.4941176471);
+  box-shadow: 0 0 8px rgba(244, 209, 111, 0.4941176471);
+  height: 18px;
+  left: 5px;
+  bottom: 0;
+  width: 180px;
+  z-index: -1;
+}
+.hero p {
+  font-size: 1.25rem;
+  padding-bottom: 1em;
+}
 
+@media (min-width: 768px) {
+  .hero__main-container {
+    flex-direction: row;
+    gap: 2em;
+  }
+  .hero h1 {
+    font-size: 3rem;
+  }
+  .hero p {
+    font-size: 1.5rem;
+  }
+}
 .projects {
   padding-top: 1em;
   /* Overlay Styling */
@@ -319,16 +332,14 @@ header span {
   justify-items: center;
 }
 .projects__item {
-  margin-bottom: 10%;
   display: flex;
   overflow: hidden;
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
-  /* Ensure all project items are the same size */
   width: 100%;
-  height: 350px; /* Fixed height for all project containers */
-  max-width: 100%; /* Ensure containers don't exceed their parent container width */
+  height: 350px;
+  max-width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -337,16 +348,16 @@ header span {
 .projects__thumbnail-container {
   position: relative;
   width: 100%;
-  height: 100%; /* Ensure the container fits the set height */
+  height: 100%;
   overflow: hidden;
 }
 .projects__thumbnail {
-  width: 100%; /* Make image fill the width of the container */
-  height: 100%; /* Make image fill the height of the container */
+  width: 100%;
+  height: 100%;
   -o-object-fit: cover;
-     object-fit: cover; /* Ensures the image covers the entire container without stretching */
+     object-fit: cover;
   -o-object-position: center;
-     object-position: center; /* Centers the image within the container */
+     object-position: center;
   transition: opacity 0.3s ease;
 }
 .projects__overlay {
@@ -355,7 +366,7 @@ header span {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.8);
   color: white;
   display: flex;
   justify-content: center;
@@ -388,9 +399,11 @@ header span {
   margin-top: 20px;
 }
 .projects__link {
-  color: #00aaff;
+  color: #6bd6c9;
   text-decoration: none;
   margin-right: 10px;
+  font-size: 1.25rem;
+  font-weight: 600;
 }
 .projects__link:hover {
   text-decoration: underline;
@@ -428,6 +441,7 @@ header span {
 
 .about-me {
   padding-block: 1em;
+  padding-top: 2em;
 }
 .about-me__title {
   font-size: 2rem;
@@ -510,6 +524,7 @@ header span {
   margin-bottom: 2em;
 }
 .contact-section__social-icons {
+  color: #392f5a;
   display: flex;
   justify-content: center;
   gap: 2em;
@@ -531,8 +546,9 @@ header span {
   margin: 0;
 }
 .footer__link {
-  color: #fff8f0;
+  color: #ff8811;
   text-decoration: none;
+  font-weight: 700;
 }
 .footer__link:hover {
   text-decoration: underline;

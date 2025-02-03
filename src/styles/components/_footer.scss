@@ -11,8 +11,9 @@
   }
 
   &__link {
-    color: $light-color;
+    color: $accent-color-3;
     text-decoration: none;
+    font-weight: 700;
 
     &:hover {
       text-decoration: underline;

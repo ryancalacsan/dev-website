@@ -1,6 +1,6 @@
 import React, { useRef } from "react"
 import Menu from "./components/Menu"
-import Header from "./components/Header"
+import Hero from "./components/Hero"
 import Projects from "./components/Projects"
 import AboutMe from "./components/AboutMe"
 import Toolkit from "./components/Toolkit"
@@ -23,7 +23,7 @@ function App() {
   return (
     <>
       <Menu />
-      <Header scrollToSection={scrollToSection} />
+      <Hero scrollToSection={scrollToSection} />
       <Projects ref={sectionRef} />
       <AboutMe />
       <Toolkit />

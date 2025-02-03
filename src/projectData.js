@@ -7,7 +7,7 @@ const projectsData = [
       "GoVan is a mock van rental & hosting app where users can explore, filter, and view detailed listings of adventure vans.",
     githubLink: "https://github.com/ryancalacsan/govan",
     livePreviewLink: "https://govan-dev.netlify.app/",
-    tags: ["React", "TailwindCSS", "TS", "Firebase"],
+    tags: ["React", "TailwindCSS", "TypeScript", "Firebase"],
   },
   {
     id: 2,
@@ -17,7 +17,7 @@ const projectsData = [
       "AI Chef is a web application that allows users to generate AI-crafted recipes by inputting ingredients.",
     githubLink: "https://github.com/ryancalacsan/ai-chef",
     livePreviewLink: "https://ai-chef-dev.netlify.app/",
-    tags: ["HTML", "CSS", "TS", "Mistral AI"],
+    tags: ["HTML", "TailwindCSS", "TypeScript", "Mistral AI"],
   },
   {
     id: 3,
@@ -27,7 +27,7 @@ const projectsData = [
       "A simple movie watchlist app that lets users search for movies via the OMDB API and save them to a watchlist.",
     githubLink: "https://github.com/ryancalacsan/movie-watchlist-v2",
     livePreviewLink: "http://cinelist-dev.netlify.app/",
-    tags: ["HTML", "CSS", "TS", "OMDB API"],
+    tags: ["HTML", "TailwindCSS", "TypeScript", "OMDB API"],
   },
   {
     id: 4,
@@ -37,7 +37,7 @@ const projectsData = [
       "A web application that creates custom color schemes by selecting a base color and method, or generates a random palette.",
     githubLink: "https://github.com/ryancalacsan/color-scheme-generator",
     livePreviewLink: "https://color-scheme-generator-dev.netlify.app/",
-    tags: ["HTML", "CSS", "JS", "Color API"],
+    tags: ["HTML", "CSS", "Vanilla JS", "Color API"],
   },
 ]
 

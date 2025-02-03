@@ -5,12 +5,14 @@ export default function Footer() {
         Built from{" "}
         <a
           href="https://github.com/ryancalacsan/ryancalacsan.github.io"
+          target="_blank"
           className="footer__link"
         >
-          scratch
+          {"<scratch/>"}
         </a>{" "}
-        with 🤍 © 2025 Ryan Calacsan
+        with 🤍
       </p>
+      <p className="footer__copyright">© 2025 Ryan Calacsan</p>
     </footer>
   )
 }
